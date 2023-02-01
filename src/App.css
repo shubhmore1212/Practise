@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap");
+
+* {
+  border: 0;
+  margin: 0;
+}
+
+/* event-header */
+
+.event-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-container {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 15rem;
+  color: #fff;
+}
+
+.block {
+  line-height: 160%;
+}
+
+/* end event-header */
+
+/* hero-section*/
+
+.hero-image-conatiner {
+  height: 400px;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+.hero-image {
+  height: 400px;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0 0 0 / 59%);
+  height: 400px;
+  width: 1000px;
+  border-radius: 10px;
+}
+/* hero-section*/
+
+/* Event card*/
+
+.event-card {
+  /*Paper*/
+  background: #fff;
+  width: 320px;
+  box-shadow: 0px 2px 38px rgba(246, 162, 67, 0.2);
+  height: auto;
+  border-radius: 10px;
+}
+
+/* End Event card*/
+
+/* Word Play*/
+
+.word-play {
+  background-color: black;
+  color: #fff;
+}
+
+.word-item-0 {
+  font-size: 60px;
+}
+
+.word-item-1 {
+  font-size: 40px;
+  font-weight: 520px;
+  letter-spacing: 20px;
+}
+
+.word-item-2 {
+  font-weight: bolder;
+}
+
+.word-item-3 {
+  font-weight: 1000px;
+  font-size: 120px;
+}
+
+/* End Word Play*/
+
+/* Slider */
+
+.side .title {
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 1000;
+  font-size: 5vw;
+  margin: 0 25vw;
+}
+
+.side {
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+  position: absolute;
+}
+
+#left-side {
+  background-color: blueviolet;
+  z-index: 2;
+}
+
+#right-side {
+  background-color: rgb(144, 226, 43);
+}
+
+/* End Slider */
+
+/* Text Decoration */
+
+#text {
+  margin: 0 35vw;
+  width: 1000px;
+}
+
+.letter {
+  color: white;
+  text-transform: uppercase;
+  font-size: 5vw;
+  font-weight: bolder;
+  line-height: 30px;
+}
+
+.line {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 4rem;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.2;
+}
+
+.fancy > .letter {
+  display: inline-block;
+  transition: transform 350ms ease;
+}
+
+.fancy:hover > .letter {
+  transition-duration: 800ms;
+}
+
+.fancy:hover > .letter:nth-child(1) {
+  transform: translate(-0%, 20%) rotate(-8deg);
+}
+
+.fancy:hover > .letter:nth-child(2) {
+  transform: translate(30%, -20%) rotate(18deg);
+}
+
+.fancy:hover > .letter:nth-child(3) {
+  transform: translate(-15%, 30%) rotate(16deg);
+}
+
+.fancy:hover > .letter:nth-child(4) {
+  transform: translate(30%, -20%) rotate(-20deg);
+}
+
+.fancy:hover > .letter:nth-child(5) {
+  transform: translate(-0%, 20%) rotate(-8deg);
+}
+
+.fancy:hover > .letter:nth-child(6) {
+  transform: translate(30%, -20%) rotate(18deg);
+}
+
+.fancy:hover > .letter:nth-child(7) {
+  transform: translate(-15%, 30%) rotate(16deg);
+}
+
+.fancy:hover > .letter:nth-child(8) {
+  transform: translate(15%, -30%) rotate(6deg);
+}
+
+/* End  Text Decoration */
+
+/* Card Slider */
+.card-body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.card-image {
+  position: relative;
+  height: 500px;
+  width: 1020px;
+  border-radius: 10px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 4px solid #ffffff;
+}
+
+.card-content {
+  position: absolute;
+  margin: 10vw 10vh;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.524);
+  padding: 20px;
+}
+
+/* End Card Slider */
+
+/* Ticket Hole */
+
+.ticket-holes-1 {
+  position: relative;
+  top: -475px;
+  left: 440px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-holes-2 {
+  position: relative;
+  top: -960px;
+  left: 1350px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-hole {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+/* End Ticket Hole */
+
+/* Parallax Card */
+
+.parallax-card {
+  height: 520px;
+  width: 360px;
+  border-radius: 10px;
+}
+
+.parallax-container {
+  margin: 0 25vw;
+  height: 50vh;
+  position: relative;
+}
+
+.small-parallax-container {
+  margin: 0 25vw;
+  height: 50vh;
+  position: absolute;
+  top: 40vh;
+  right: 20vw;
+  transition: transform 350ms ease;
+  transition-duration: 800ms;
+}
+
+.small-parallax-container:hover {
+  transform: rotate(-20deg);
+}
+
+.small-parallax-card {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+.star-container {
+  z-index: -1;
+}
+
+.star-container > span {
+  position: relative;
+  top: -10vh;
+  display: inline-block;
+  transition: transform 350ms ease;
+}
+
+span img {
+  height: 20px;
+  width: 20px;
+}
+
+span:hover {
+  transform: rotate(-40deg);
+}
+
+/* End Parallax Card */
